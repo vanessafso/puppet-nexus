@@ -56,7 +56,7 @@ class nexus::package (
   }
 
   $nexus_archive   = "nexus${bundle_type}-${full_version}-${nexus_type}.tar.gz"
-  $download_url    = "${download_site}/${nexus_archive}"
+  $download_url    = $download_site
   $dl_file         = "${download_folder}/${nexus_archive}"
   $nexus_home_real = "${nexus_root}/nexus${bundle_type}-${full_version}"
 
